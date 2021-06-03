@@ -11,17 +11,13 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Red: hsl(0, 100%, 74%) 
-- Green: hsl(154, 59%, 51%)
-
-### Accent
-
-- Blue: hsl(248, 32%, 49%)
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
 
 ### Neutral
 
-- Dark Blue: hsl(249, 10%, 26%) 
-- Grayish Blue: hsl(246, 25%, 77%)
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
 
 ## Typography
 
@@ -31,5 +27,5 @@ The designs were created to the following widths:
 
 ### Font
 
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 400, 500, 600, 700
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700

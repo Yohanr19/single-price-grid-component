@@ -1,146 +1,131 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 :root {
-  --PrimaryRed: hsl(0, 100%, 74%);
-  --PrimaryGreen: hsl(154, 59%, 51%);
-  --AccentBlue: hsl(248, 32%, 49%);
-  --DarkBlue: hsl(249, 10%, 26%);
-  --GrayBlue: hsl(246, 25%, 77%);
-  --Font: Poppins, sans-serif;
-  --RegularFont: 400;
-  --MediumFont: 500;
-  --SemiBold-Font: 600;
-  --Bold-Font: 700;
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayBlue: hsl(218, 22%, 67%);
+  --font: Karla, sans-serif;
+  --regularFont: 400;
+  --boldFont: 700;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    background-color: var(--LightGray);
 }
-body {
-  background: url(./images/bg-intro-mobile.png), var(--PrimaryRed);
-  font-family: var(--Font);
-  color: white;
+.wrapper
+{
+  margin: 50px auto;
+  width: 85%;
+
 }
-.wrapper {
-  width: 87%;
-  margin: 25px auto;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-}
-.definition {
-  margin-bottom: 35px;
-}
-h1 {
-  text-align: center;
-  padding: 10px 7%;
-  font-size: 1.3rem;
-  font-weight: var(--Bold-Font);
-}
-.small-text {
-  padding: 5px 0;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: var(--RegularFont);
-  max-width: 50ch;
-}
-.sing-up-header {
-  background-color: var(--AccentBlue);
-  padding: 20px 20%;
-  margin-top: 22px;
-  border-radius: 15px;
-  box-shadow: 0px 6px 5px var(--DarkBlue);
-}
-h2 {
-  font-size: 1rem;
-  font-weight: var(--RegularFont);
-  text-align: center;
-}
-.sing-up-body {
-  margin-top: 40px;
+.intro{
   background-color: white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem;
+  border-radius: 5px;
+  padding: 1.2rem 1.1rem;
+}
+h1 
+{
+  color: var(--Cyan);
+  font-weight: var(--boldFont);
+  font-size: 1.3rem;
+}
+h2
+{
+  color: var(--BrightYellow);
+  font-size: 1rem;
+}
+h3{
   color: var(--GrayBlue);
+  font-size: 0.9rem;
 }
-.fields-container {
-  width: 100%;
-}
-.field {
-  margin-bottom: 1.2rem;
-  position: relative;
-}
-.input {
-  width: 100%;
-  padding: 0.9rem 0.5rem;
-  color: var(--PrimaryRed);
-}
-.btn {
-  background-color: var(--PrimaryGreen);
-  text-transform: uppercase;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+
+.pricing 
+{
   color: white;
-  font-weight: var(--SemiBold-Font);
-  letter-spacing: 0.1rem;
-  border-radius: 10px;
+  background-color: var(--Cyan);
+  padding: 0.3rem 1.1rem;
 }
-h3 {
-  margin-top: 18px;
-  text-align: center;
-  font-size: 0.7rem;
-  font-weight: var(--RegularFont);
+.sub-heading
+{
+  font-size: 1.1rem;
 }
-.red-text {
-  text-decoration: none;
-  color: var(--PrimaryRed);
+h4{
+  color: var(--LightGray);
+}
+.dolar{
+  color: white;
+  font-size: 2rem;
+  font-weight: var(--boldFont);
+}
+.singup
+{
+  margin-top: 1rem;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--BrightYellow);
+  color: white;
+  box-shadow: 0px 2px 1px var(--GrayBlue);
+}
+.info 
+{
+  background-color: hsl(179, 62%, 57%);
+  padding: 0.5rem 1.1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white; 
+}
+.info-header
+{
+  font-size: 1.4rem;
+  font-weight: var(--boldFont);
+  padding: 1.4rem 0;
+}
+p{
+  color: var(--LightGray);
+  margin-bottom: 0.2rem;
+  margin-top: 0;
 }
 .attribution {
   font-size: 11px;
   text-align: center;
   position: fixed;
   bottom: 0;
+  color: black;
 }
-:hover.btn {
-  background-color: hsl(154, 62%, 67%);
-}
-.hide {
-  opacity: 0;
-}
-.show {
-  opacity: 1;
-}
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: black;
 }
-@media screen and (min-width: 1200px) {
-  .wrapper {
-    flex-direction: row;
-    width: 70%;
-    margin: 10% auto;
+@media screen and (min-width: 1000px) {
+  .wrapper
+  {
+    width: 50%;
   }
-  h1 {
-    text-align: left;
-    padding-left: 0;
-    font-size: 3rem;
-    padding-right: 5%;
-    max-width: 17ch;
+  body
+  {
+    font-size: 22px;
   }
-  .small-text {
-    font-size: 1.1rem;
-    text-align: left;
-    max-width: 45ch;
+  .content 
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  .sing-up {
-    max-width: 1000px;
-    padding-left: 10%;
-    width: 65%;
+  .info {
+    padding: 2rem;
   }
-  .sing-up-header {
-    padding: 20px 5%;
+  .pricing
+  {
+    padding: 2rem;
   }
+  h1, h2, h3
+  {
+    font-size: 1.4rem;
+  }
+  .intro{
+    padding: 1rem 3rem;
+  }
+  
 }
